@@ -1,0 +1,33 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/onboardingFragment">
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.example.demoapp.view.onboarding.letsyouin.LetsYouIn"
+        android:label="Onboarding"
+        tools:layout="@layout/fragment_lets_you_in">
+        <action
+            android:id="@+id/action_onboarding_to_welcome"
+            app:destination="@id/welcomeScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/welcomeScreen"
+        android:name="com.example.demoapp.view.onboarding.welcomescreen.WelcomeScreen"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_welcome_screen" />
+
+    <fragment
+        android:id="@+id/logInScreen"
+        android:name="com.example.demoapp.view.onboarding.loginview.LoginFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.example.demoapp.view.onboarding.splashscreen.SplashScreenFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_screen_splash"/>
+</navigation>

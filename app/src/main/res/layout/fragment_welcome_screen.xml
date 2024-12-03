@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".view.onboarding.welcomescreen.WelcomeScreen">
+
+    <ImageView
+        android:id="@+id/View1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/auto_layout_horizontal"></ImageView>
+
+    <View
+        android:id="@+id/viewLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="226dp"
+        android:background="@drawable/style_gradient"
+        ></View>
+
+    <View
+        android:id="@+id/viewSmall"
+        android:layout_width="match_parent"
+        android:layout_height="618px"
+        android:background="@drawable/style_gradient"
+        android:paddingLeft="24dp"
+        android:paddingTop="36dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></View>
+
+    <TextView
+        android:id="@+id/tvWelcomeMova"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/urbanist_bold"
+        android:lineHeight="48dp"
+        android:text="Welcome to Mova"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="@id/viewSmall"
+        app:layout_constraintStart_toStartOf="@id/viewSmall"
+        app:layout_constraintTop_toTopOf="@id/viewSmall"></TextView>
+
+    <TextView
+        android:id="@+id/tvPunchLine"
+        android:layout_width="380sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/urbanist_medium"
+        android:letterSpacing="0.16"
+        android:lineHeight="25.2dp"
+        android:text="The best movie streaming app of the century to make your days great!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textFontWeight="500"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@id/viewSmall"
+        app:layout_constraintStart_toStartOf="@id/viewSmall"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcomeMova"></TextView>
+
+    <!--    <androidx.viewpager.widget.ViewPager-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="300dp"-->
+    <!--        android:id="@+id/view_pager"/>-->
+
+    <!--    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator-->
+    <!--        android:id="@+id/dot1"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:dotsColor="@android:color/holo_green_light"-->
+    <!--        app:dotsSize="15dp"-->
+    <!--        app:dotsSpacing="5dp"-->
+    <!--        app:progressMode="true"-->
+    <!--        app:selectedDotColor="@android:color/holo_green_dark"-->
+    <!--        tools:layout_editor_absoluteX="110dp"-->
+    <!--        tools:layout_editor_absoluteY="632dp"-->
+    <!--        tools:ignore="MissingClass" />-->
+
+    <Button
+        android:id="@+id/primaryButton"
+        style="@style/PrimaryRoundedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/urbanist_bold"
+        android:text="Get Started"
+        app:layout_constraintBottom_toBottomOf="@id/viewSmall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
