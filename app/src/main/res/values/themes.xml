@@ -32,6 +32,7 @@
         <item name="android:windowFullscreen">false</item>
         <item name="colorPrimary">@color/primaryColor</item>-->
         <item name="android:statusBarColor">@color/white</item>
+<!--        <item name="android:navigationBarColor">@color/white</item>-->
 
     </style>
 
@@ -49,5 +50,7 @@
         <!-- Customize your light theme here. -->
         <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<!--        <item name="android:navigationBarColor">@color/white</item>-->
+
     </style>
 </resources>

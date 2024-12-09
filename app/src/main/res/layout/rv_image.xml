@@ -31,18 +31,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/cardImage" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/addToListButton"-->
-<!--        android:layout_width="20dp"-->
-<!--        android:layout_height="20dp"-->
-<!--        android:contentDescription="@null"-->
-<!--        android:background="@drawable/style_rating"-->
-<!--        android:src="@drawable/ic_plus"-->
-<!--        android:layout_marginEnd="15dp"-->
-<!--        android:layout_marginBottom="15dp"-->
-<!--        android:scaleType="centerCrop"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/cardImage"-->
-<!--        app:layout_constraintEnd_toEndOf="@id/cardImage" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

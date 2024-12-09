@@ -67,29 +67,13 @@
         app:layout_constraintStart_toStartOf="@id/viewSmall"
         app:layout_constraintTop_toBottomOf="@id/tvWelcomeMova"></TextView>
 
-    <!--    <androidx.viewpager.widget.ViewPager-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="300dp"-->
-    <!--        android:id="@+id/view_pager"/>-->
-
-    <!--    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator-->
-    <!--        android:id="@+id/dot1"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        app:dotsColor="@android:color/holo_green_light"-->
-    <!--        app:dotsSize="15dp"-->
-    <!--        app:dotsSpacing="5dp"-->
-    <!--        app:progressMode="true"-->
-    <!--        app:selectedDotColor="@android:color/holo_green_dark"-->
-    <!--        tools:layout_editor_absoluteX="110dp"-->
-    <!--        tools:layout_editor_absoluteY="632dp"-->
-    <!--        tools:ignore="MissingClass" />-->
-
     <Button
         android:id="@+id/primaryButton"
         style="@style/PrimaryRoundedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/urbanist_bold"
         android:text="Get Started"

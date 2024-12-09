@@ -5,9 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.WindowManager
 import android.widget.Button
-import androidx.compose.ui.window.Window
 import com.example.demoapp.R
 import com.example.demoapp.view.onboarding.letsyouin.LetsYouIn
 

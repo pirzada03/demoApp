@@ -30,7 +30,8 @@
     <string name="str_new_releases">New Releases</string>
     <string name="str_notification">Notification</string>
     <string name="str_preference_file_key">com\.example\.demoapp\.MyAppPrefs</string>
-
+    <string name="search">Search</string>
+    <string name="str_my_list">My List</string>
 
 
     <string name="lorem_ipsum">

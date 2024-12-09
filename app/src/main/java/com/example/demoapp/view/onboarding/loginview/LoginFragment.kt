@@ -11,6 +11,7 @@ import com.google.android.material.textfield.TextInputLayout
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.demoapp.R
 import com.example.demoapp.view.homeandactionmenu.HomeAndActionMenuActivity
@@ -26,7 +27,11 @@ class LoginFragment : Fragment() {
         val passwordInputLayout: TextInputLayout = view.findViewById(R.id.tfPassword)
         val signInButton: Button = view.findViewById(R.id.btnSignIn)
         val checkbox: CheckBox = view.findViewById(R.id.myCheckbox)
+        val tvCheckbox:TextView = view.findViewById(R.id.tvCheckbox)
 
+        tvCheckbox.setOnClickListener{
+            checkbox.isChecked=!checkbox.isChecked
+        }
         signInButton.setOnClickListener {
             val email = emailInputLayout.editText?.text.toString().trim()
             val password = passwordInputLayout.editText?.text.toString().trim()

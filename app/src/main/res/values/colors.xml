@@ -21,6 +21,8 @@
     <color name="errorBackground">#E2122114</color>
     <color name="transparent">#00000000</color>
     <color name="greyScale800">#424242</color>
+    <color name="greyScale100">#F5F5F5</color>
+    <color name="transparentRed">#15E21221</color>
 
 
 
