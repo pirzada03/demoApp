@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RippleEffectColour">
+        <item name="colorControlHighlight">#E2122140</item>
+    </style>
+    <style name="PrimaryRoundedButton" parent="Widget.AppCompat.Button">
+        <!-- Use the custom drawable for the background -->
+        <item name="android:background">@drawable/rounded_button_background_ripple</item>
+        <item name="backgroundTint">@color/primaryColor</item>
+        <item name="android:theme">@style/RippleEffectColour</item>
+        <!-- Text Appearance -->
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SocialLoginButton" parent="Widget.AppCompat.Button">
+        <!-- Apply custom shape as background -->
+        <item name="android:background">@drawable/social_button_background</item>
+        <!-- Text appearance -->
+        <item name="android:textColor">@color/greyScaleColor</item>
+        <item name="android:fontFamily">@font/urbanist_semibold</item>
+        <!--        <item name="cornerFamily">rounded</item>-->
+        <item name="backgroundTint">@color/white</item>
+        <!-- Ensure padding for inner text -->
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="android:paddingTop">18dp</item>
+        <item name="android:paddingBottom">18dp</item>
+    </style>
+
+
+    <style name="LoginButton" parent="Widget.AppCompat.Button">
+        <!-- Apply custom shape as background -->
+        <item name="android:background">@drawable/rounded_button_background_ripple</item>
+        <!-- Text appearance -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/urbanist_semibold</item>
+        <item name="backgroundTint">@color/primaryColor</item>
+    </style>
+
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+
+    <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="boxCornerRadiusBottomEnd">15dp</item>
+        <item name="boxCornerRadiusBottomStart">15dp</item>
+        <item name="boxCornerRadiusTopEnd">15dp</item>
+        <item name="boxCornerRadiusTopStart">15dp</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="hintTextColor">@color/greyScale500</item>
+        <item name="hintEnabled">true</item>
+        <item name="boxBackgroundColor">@color/greyScale50</item>
+        <item name="boxStrokeColor">@color/primaryColor</item>
+    </style>
+
+    <style name="ErrorTextAppearance" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">@color/errorColor</item>
+    </style>
+
+
+    <style name="MyShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="MyDownloadShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/white</item>
+    </style>
+</resources>

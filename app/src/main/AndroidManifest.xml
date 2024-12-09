@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/SplashScreen">
+        <activity
+            android:name=".view.download.DownloadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.mylist.MyListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.homeexplorefilter.HomeExploreFilterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.homeandactionmenu.HomeNotificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.homeandactionmenu.NewReleasesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.homeandactionmenu.TopMoviesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.homeandactionmenu.HomeAndActionMenuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.OnboardingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.onboarding.splashscreen.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- <activity -->
+        <!-- android:name=".view.MainActivity" -->
+        <!-- android:exported="true" -->
+        <!-- android:theme="@style/SplashScreen"> -->
+        <!-- </activity> -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
