@@ -18,6 +18,7 @@ import com.example.demoapp.data.ApiError
 import com.example.demoapp.data.ApiLoading
 import com.example.demoapp.data.ApiSuccess
 import com.example.demoapp.databinding.FragmentTopMoviesBinding
+import com.example.demoapp.view.MainActivity
 import com.example.demoapp.viewmodel.NewReleaseViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -31,7 +32,6 @@ class NewReleasesFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    private lateinit var binding: FragmentTopMoviesBinding
     private lateinit var recyclerViewAdapter2: ExpandedRecyclerViewAdapter
     private lateinit var newReleaseViewModel: NewReleaseViewModel
 
@@ -52,18 +52,13 @@ class NewReleasesFragment : Fragment() {
         val backArrow = view.findViewById<ImageView>(R.id.back)
 
         backArrow.setOnClickListener {
-            val intent = Intent(requireContext(), HomeAndActionMenuActivity::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
-            startActivity(intent)
             requireActivity().finish()
         }
-
         return view
-
     }
 
     private fun initRecycleView1() {
-        val recyclerView = requireView().findViewById<RecyclerView>(R.id.rvTopMovies)
+        val recyclerView = requireView().findViewById<RecyclerView>(R.id.rvNewReleases)
         recyclerView?.layoutManager = GridLayoutManager(context,2)
         recyclerViewAdapter2 = ExpandedRecyclerViewAdapter()
         recyclerView.adapter = recyclerViewAdapter2
@@ -71,7 +66,8 @@ class NewReleasesFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        newReleaseViewModel = ViewModelProvider(this).get(newReleaseViewModel::class.java)
+
+        newReleaseViewModel = ViewModelProvider(this).get(NewReleaseViewModel::class.java)
         initRecycleView1()
         newReleaseViewModel.getNewMoviesLiveData().observe(viewLifecycleOwner) { result ->
             when (result) {

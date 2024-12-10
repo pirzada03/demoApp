@@ -10,8 +10,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.demoapp.R
+import com.example.demoapp.view.MainActivity
 import com.example.demoapp.view.OnboardingActivity
-import com.example.demoapp.view.homeandactionmenu.HomeAndActionMenuActivity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -40,7 +40,7 @@ class SplashScreenFragment : Fragment(R.layout.fragment_screen_splash) {
 
 
             val intent = if (isLoggedIn) {
-                Intent(requireActivity(), HomeAndActionMenuActivity::class.java)
+                Intent(requireActivity(), MainActivity::class.java)
             } else {
                 Intent(requireActivity(), OnboardingActivity::class.java)
             }
@@ -61,7 +61,7 @@ class SplashScreenFragment : Fragment(R.layout.fragment_screen_splash) {
             val isLoggedIn = sharedPref.getBoolean("isLoggedIn",false)
 
             val intent = if (isLoggedIn) {
-                Intent(requireActivity(), HomeAndActionMenuActivity::class.java)
+                Intent(requireActivity(), MainActivity::class.java)
             } else {
                 Intent(requireActivity(), OnboardingActivity::class.java)
             }

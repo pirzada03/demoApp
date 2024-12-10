@@ -16,9 +16,6 @@ import com.example.demoapp.adapters.ExpandedRecyclerViewAdapter
 import com.example.demoapp.data.ApiError
 import com.example.demoapp.data.ApiLoading
 import com.example.demoapp.data.ApiSuccess
-import com.example.demoapp.view.download.DownloadActivity
-import com.example.demoapp.view.homeandactionmenu.HomeAndActionMenuActivity
-import com.example.demoapp.view.mylist.MyListActivity
 import com.example.demoapp.viewmodel.TopRatedViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
@@ -57,28 +54,28 @@ class HomeSearchFilterFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_home_search_filter, container, false)
 
-        val bottomNav: BottomNavigationView = view.findViewById(R.id.bottomNav)
-        bottomNav.setOnItemSelectedListener { menuItem ->
-            when (menuItem.itemId) {
-                R.id.home -> {
-                    startActivityWithReorder(HomeAndActionMenuActivity::class.java)
-                    true
-                }
-                R.id.explore -> {
-                    startActivityWithReorder(HomeExploreFilterActivity::class.java)
-                    true
-                }
-                R.id.myList -> {
-                    startActivityWithReorder(MyListActivity::class.java)
-                    true
-                }
-                R.id.download -> {
-                    startActivityWithReorder(DownloadActivity::class.java)
-                    true
-                }
-                else -> false
-            }
-        }
+//        val bottomNav: BottomNavigationView = view.findViewById(R.id.bottomNav)
+//        bottomNav.setOnItemSelectedListener { menuItem ->
+//            when (menuItem.itemId) {
+//                R.id.home -> {
+//                    startActivityWithReorder(HomeAndActionMenuActivity::class.java)
+//                    true
+//                }
+//                R.id.explore -> {
+//                    startActivityWithReorder(HomeExploreFilterActivity::class.java)
+//                    true
+//                }
+//                R.id.myList -> {
+//                    startActivityWithReorder(MyListActivity::class.java)
+//                    true
+//                }
+//                R.id.download -> {
+//                    startActivityWithReorder(DownloadActivity::class.java)
+//                    true
+//                }
+//                else -> false
+//            }
+//        }
 
         return view
     }

@@ -14,7 +14,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.demoapp.R
-import com.example.demoapp.view.homeandactionmenu.HomeAndActionMenuActivity
+import com.example.demoapp.view.MainActivity
 
 class LoginFragment : Fragment() {
 
@@ -50,7 +50,7 @@ class LoginFragment : Fragment() {
                         }
                     }
                 }
-                val intent = Intent(requireContext(), HomeAndActionMenuActivity::class.java)
+                val intent = Intent(requireContext(), MainActivity::class.java)
                 startActivity(intent)
             }
         }

@@ -63,17 +63,4 @@
         app:spanCount="1"
         tools:listitem="@layout/rv_download" />
 
-    <!-- Bottom Navigation -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNav"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@color/white"
-        app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"
-        app:itemIconTint="@color/nav_icon"
-        app:itemTextColor="@color/nav_icon"
-        app:labelVisibilityMode="labeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/nav_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>

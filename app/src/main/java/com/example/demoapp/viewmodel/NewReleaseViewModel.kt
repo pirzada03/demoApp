@@ -25,7 +25,6 @@ class NewReleaseViewModel @Inject constructor( private val moviesRepository : Mo
 
     fun makeApiCall(){
         viewModelScope.launch {
-
             liveDataList.postValue(ApiLoading)
             val moviesResult = moviesRepository.getNewReleases()
             if(moviesResult.isSuccessful){

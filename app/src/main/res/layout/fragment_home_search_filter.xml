@@ -9,8 +9,7 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:paddingBottom="80dp">
+        android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -78,17 +77,17 @@
     </androidx.core.widget.NestedScrollView>
 
     <!-- Bottom Navigation -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNav"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
-        android:background="@color/white"
-        app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"
-        app:itemIconTint="@color/nav_icon"
-        app:itemTextColor="@color/nav_icon"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/nav_menu" />
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottomNav"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:background="@color/white"-->
+<!--        app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"-->
+<!--        app:itemIconTint="@color/nav_icon"-->
+<!--        app:itemTextColor="@color/nav_icon"-->
+<!--        app:labelVisibilityMode="labeled"-->
+<!--        app:menu="@menu/nav_menu" />-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -17,9 +17,7 @@ import com.example.demoapp.adapters.RecyclerViewAdapter
 import com.example.demoapp.data.ApiError
 import com.example.demoapp.data.ApiLoading
 import com.example.demoapp.data.ApiSuccess
-import com.example.demoapp.view.download.DownloadActivity
-import com.example.demoapp.view.homeexplorefilter.HomeExploreFilterActivity
-import com.example.demoapp.view.mylist.MyListActivity
+import com.example.demoapp.databinding.ActivityMainBinding
 import com.example.demoapp.viewmodel.NewReleaseViewModel
 import com.example.demoapp.viewmodel.TopRatedViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -36,6 +34,7 @@ class HomeScreenFragment : Fragment() {
 
     private lateinit var topRatedViewModel:TopRatedViewModel
     private lateinit var newReleaseViewModel: NewReleaseViewModel
+    private lateinit var binding : ActivityMainBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,6 +43,8 @@ class HomeScreenFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+
+
     }
 
     override fun onCreateView(
@@ -63,33 +64,12 @@ class HomeScreenFragment : Fragment() {
         tvSeeAll2.setOnClickListener {
             val intent = Intent(requireContext(), NewReleasesActivity::class.java)
             startActivity(intent)
-
-        }
-        val bottomNav: BottomNavigationView = view.findViewById(R.id.bottomNav)
-        bottomNav.setOnItemSelectedListener { menuItem ->
-            when (menuItem.itemId) {
-                R.id.home -> {
-                    startActivityWithReorder(HomeAndActionMenuActivity::class.java)
-                    true
-                }
-                R.id.explore -> {
-                    startActivityWithReorder(HomeExploreFilterActivity::class.java)
-                    true
-                }
-                R.id.myList -> {
-                    startActivityWithReorder(MyListActivity::class.java)
-                    true
-                }
-                R.id.download -> {
-                    startActivityWithReorder(DownloadActivity::class.java)
-                    true
-                }
-                else -> false
-            }
         }
 
         return view
     }
+
+
 
     private fun initRecycleView1() {
         val recyclerView = requireView().findViewById<RecyclerView>(R.id.recyclerView1)

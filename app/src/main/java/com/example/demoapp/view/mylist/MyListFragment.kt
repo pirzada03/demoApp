@@ -7,9 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.demoapp.R
-import com.example.demoapp.view.download.DownloadActivity
-import com.example.demoapp.view.homeandactionmenu.HomeAndActionMenuActivity
-import com.example.demoapp.view.homeexplorefilter.HomeExploreFilterActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 // TODO: Rename parameter arguments, choose names that match
@@ -42,28 +39,28 @@ class MyListFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_my_list, container, false)
 
-        val bottomNav: BottomNavigationView = view.findViewById(R.id.bottomNav)
-        bottomNav.setOnItemSelectedListener { menuItem ->
-            when (menuItem.itemId) {
-                R.id.home -> {
-                    startActivityWithReorder(HomeAndActionMenuActivity::class.java)
-                    true
-                }
-                R.id.explore -> {
-                    startActivityWithReorder(HomeExploreFilterActivity::class.java)
-                    true
-                }
-                R.id.myList -> {
-                    startActivityWithReorder(MyListActivity::class.java)
-                    true
-                }
-                R.id.download -> {
-                    startActivityWithReorder(DownloadActivity::class.java)
-                    true
-                }
-                else -> false
-            }
-        }
+//        val bottomNav: BottomNavigationView = view.findViewById(R.id.bottomNav)
+//        bottomNav.setOnItemSelectedListener { menuItem ->
+//            when (menuItem.itemId) {
+//                R.id.home -> {
+//                    startActivityWithReorder(HomeAndActionMenuActivity::class.java)
+//                    true
+//                }
+//                R.id.explore -> {
+//                    startActivityWithReorder(HomeExploreFilterActivity::class.java)
+//                    true
+//                }
+//                R.id.myList -> {
+//                    startActivityWithReorder(MyListActivity::class.java)
+//                    true
+//                }
+//                R.id.download -> {
+//                    startActivityWithReorder(DownloadActivity::class.java)
+//                    true
+//                }
+//                else -> false
+//            }
+//        }
 
         return view
     }

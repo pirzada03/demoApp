@@ -36,7 +36,6 @@ class TopMoviesFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    private lateinit var binding: FragmentTopMoviesBinding
     private lateinit var recyclerViewAdapter1: ExpandedRecyclerViewAdapter
     private lateinit var topRatedViewModel: TopRatedViewModel
 
@@ -57,9 +56,9 @@ class TopMoviesFragment : Fragment() {
         val backArrow = view.findViewById<ImageView>(R.id.back)
 
         backArrow.setOnClickListener {
-            val intent = Intent(requireContext(), HomeAndActionMenuActivity::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
-            startActivity(intent)
+//            val intent = Intent(requireContext(), HomeAndActionMenuActivity::class.java)
+//            intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
+//            startActivity(intent)
             requireActivity().finish()
         }
 
